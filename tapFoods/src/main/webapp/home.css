@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --navbar-height: 59px;
+  }
+  
+  /* Navigation Bar */
+  #navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  /* Navigation Bar: Logo and Image */
+  #logo {
+    margin: 10px 20px;
+  }
+  
+  #logo img {
+    height: 56px;
+    margin: 6px 8px;
+  }
+  /* Navigation Bar: List Styling */
+  #navbar ul {
+    display: flex;
+    font-family: "Baloo Bhai 2", cursive;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 9px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  /* Home Section */
+  
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #home::before {
+    content: "";
+    position: absolute;
+    background: url('https://thatsuman.github.io/web-dev-projects/SafeMeal/assets/salad.jpg') no-repeat center center/cover;
+    height: 613px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+  }
+  
+  #home h1 {
+    color: white;
+    text-align: center;
+    font-family: "Bree Serif", serif;
+  }
+  
+  #home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Bree Serif", serif;
+  }
+  /* Services Section */
+  #services {
+    margin: 12px;
+    display: flex;
+  }
+  
+  #services .box {
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #eaeaea;
+  }
+  
+  #services .box img {
+    height: 80px;
+    margin: auto;
+    display: block;
+  }
+  
+  #services .box p {
+    font-family: "Bree Serif", serif;
+  }
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+  }
+  
+  /* Utility Classes */
+  .h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .h-primary-services {
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding: 20px;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .h-secondary {
+    font-size: 2.8rem;
+    font-weight: 400;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .btn {
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .service-font {
+    font-size: 1.5rem;
+  }
